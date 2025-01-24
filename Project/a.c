@@ -27,6 +27,20 @@ Student *createStudent(int id, char *name, char *skills, char *availability) {
     return newStudent;
 }
 
+// Function to add a student to the list
+void addStudent(int id, char *name, char *skills, char *availability) {
+    Student *newStudent = createStudent(id, name, skills, availability);
+
+    if (head == NULL) {
+        head = tail = newStudent;
+    } else {
+        tail->next = newStudent;
+        newStudent->prev = tail;
+        tail = newStudent;
+    }
+    printf("Student %s added successfully!\n", name);
+}
+
 // Function to display all students
 void displayStudents() {
     if (head == NULL) {
