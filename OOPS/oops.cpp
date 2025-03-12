@@ -17,7 +17,7 @@ public:
     /*
     1. non-parameterized -> which has no parameter
     2. parameterized -> which has parameters
-    3. copy
+    3. Copy
     4. Should be same as class name
     */
 
@@ -27,6 +27,8 @@ public:
 
     Teacher(string name, string dept, string subject, double salary) {
         // name = name; // Issue for compiler to understand which one
+        // Eg
+        // this -> value = value;
         (*this).name = name; // Now this is meant to be object
         this -> dept = dept;
         this -> subject = subject;
