@@ -43,8 +43,8 @@ public:
     }
 
     void display() {
-        cout << "Name: " << name << endl;  // Resolving ambiguity
-        cout << "Age: " << age << endl;
+        cout << "Name: " << Student::name << endl;  // Resolving ambiguity
+        cout << "Age: " << Student::age << endl;
         cout << "Roll No: " << rollNo << endl;
         cout << "Salary: " << salary << endl;
         cout << "Subject: " << subject << endl;
