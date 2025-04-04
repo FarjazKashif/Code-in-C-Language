@@ -1,6 +1,15 @@
 #include <iostream>
 using namespace std;
 
+/*
+A stock trading platform tracks different company stocks with current prices and total available
+shares. Users can buy and sell stocks, and the system should update the company’s stock price
+dynamically based on demand. Create a Stock class with private attributes for company name, stock
+price, and available shares. Implement setters and getters to handle transactions securely, updating
+stock prices based on market demand. Use a static data member to track overall stock market value.
+The program should allow users to trade stocks and reflect market changes dynamically.
+*/
+
 class Stock
 {
 private:
